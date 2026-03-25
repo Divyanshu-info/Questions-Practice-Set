@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 ---
 # Task: Create a Question Paper in Hindi for Exam Preparation
 
