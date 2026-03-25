@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>गणित प्रैक्टिस सेट भाग-4: चाल-दूरी-समय, क्षेत्रमिति, बीजगणित - UPSI</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			line-height: 1.6;
+			margin: 20px;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: auto;
+			background: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1,
+		h2 {
+			text-align: center;
+			color: #2c3e50;
+			border-bottom: 2px solid #3498db;
+			padding-bottom: 10px;
+		}
+
+		h3 {
+			color: #2c3e50;
+			margin-top: 30px;
+		}
+
+		.question-paper,
+		.solutions {
+			margin-top: 20px;
+		}
+
+		.question {
+			margin-bottom: 25px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.question p {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.options {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		.options li {
+			margin-bottom: 5px;
+		}
+
+		.solution {
+			margin-bottom: 20px;
+			padding: 15px;
+			background-color: #ecf0f1;
+			border-left: 4px solid #3498db;
+		}
+
+		.solution p {
+			margin: 5px 0;
+		}
+
+		@media print {
+			body {
+				background-color: #fff;
+				margin: 0;
+			}
+
+			.container {
+				box-shadow: none;
+				border-radius: 0;
+				width: 100%;
+				max-width: 100%;
+				padding: 10px;
+			}
+
+			h1,
+			h2 {
+				page-break-after: avoid;
+			}
+
+			.solutions {
+				page-break-before: always;
+			}
+
+			.question,
+			.solution {
+				page-break-inside: avoid;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>गणित प्रैक्टिस सेट भाग-4 (UPSI परीक्षा)</h1>
+		<p style="text-align:center; color:#666;">विषय: चाल-दूरी-समय, क्षेत्रमिति, बीजगणित | कुल प्रश्न: 30</p>
+
+		<div class="question-paper">
+			<h2>प्रश्न पत्र</h2>
+
+			<h3>खंड-1: चाल, दूरी और समय (प्रश्न 1-10)</h3>
+
+			<div class="question" id="q1">
+				<p>1. एक व्यक्ति 60 किमी/घंटा की गति से 3 घंटे चलता है। उसने कुल कितनी दूरी तय की?</p>
+				<ul class="options">
+					<li>(A) 150 किमी</li>
+					<li>(B) 160 किमी</li>
+					<li>(C) 170 किमी</li>
+					<li>(D) 180 किमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q2">
+				<p>2. एक ट्रेन 72 किमी/घंटा की गति से चल रही है। इसकी गति मी/सेकंड में कितनी होगी?</p>
+				<ul class="options">
+					<li>(A) 18 मी/से</li>
+					<li>(B) 20 मी/से</li>
+					<li>(C) 24 मी/से</li>
+					<li>(D) 36 मी/से</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q3">
+				<p>3. एक व्यक्ति 40 किमी/घंटा की गति से जाता है और 60 किमी/घंटा की गति से वापस आता है। उसकी औसत गति
+					कितनी होगी?</p>
+				<ul class="options">
+					<li>(A) 45 किमी/घंटा</li>
+					<li>(B) 48 किमी/घंटा</li>
+					<li>(C) 50 किमी/घंटा</li>
+					<li>(D) 52 किमी/घंटा</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q4">
+				<p>4. 150 मीटर लंबी ट्रेन 54 किमी/घंटा की गति से चल रही है। एक खंभे को कितने सेकंड में पार करेगी?</p>
+				<ul class="options">
+					<li>(A) 8 सेकंड</li>
+					<li>(B) 10 सेकंड</li>
+					<li>(C) 12 सेकंड</li>
+					<li>(D) 15 सेकंड</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q5">
+				<p>5. दो ट्रेनें एक-दूसरे की ओर क्रमशः 50 किमी/घंटा और 40 किमी/घंटा की गति से आ रही हैं। उनके बीच की
+					दूरी 180 किमी है। कितने समय बाद वे मिलेंगी?</p>
+				<ul class="options">
+					<li>(A) 1.5 घंटे</li>
+					<li>(B) 2 घंटे</li>
+					<li>(C) 2.5 घंटे</li>
+					<li>(D) 3 घंटे</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q6">
+				<p>6. एक नाव की शांत जल में गति 10 किमी/घंटा है और धारा की गति 2 किमी/घंटा है। धारा के विरुद्ध 48 किमी
+					जाने में कितना समय लगेगा?</p>
+				<ul class="options">
+					<li>(A) 4 घंटे</li>
+					<li>(B) 5 घंटे</li>
+					<li>(C) 6 घंटे</li>
+					<li>(D) 8 घंटे</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q7">
+				<p>7. 200 मीटर लंबी ट्रेन, 300 मीटर लंबे प्लेटफॉर्म को 25 सेकंड में पार करती है। ट्रेन की गति कितनी है?
+				</p>
+				<ul class="options">
+					<li>(A) 60 किमी/घंटा</li>
+					<li>(B) 72 किमी/घंटा</li>
+					<li>(C) 80 किमी/घंटा</li>
+					<li>(D) 90 किमी/घंटा</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q8">
+				<p>8. A और B दो स्थान 300 किमी दूर हैं। एक कार A से B की ओर 60 किमी/घंटा और दूसरी B से A की ओर 40
+					किमी/घंटा की गति से चलती है। वे कितने समय बाद मिलेंगी?</p>
+				<ul class="options">
+					<li>(A) 2 घंटे</li>
+					<li>(B) 3 घंटे</li>
+					<li>(C) 4 घंटे</li>
+					<li>(D) 5 घंटे</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q9">
+				<p>9. एक व्यक्ति 5 किमी/घंटा की गति से चलकर ट्रेन से 5 मिनट देर से पहुँचता है। 6 किमी/घंटा की गति से
+					चलने पर 4 मिनट पहले पहुँचता है। स्टेशन की दूरी कितनी है?</p>
+				<ul class="options">
+					<li>(A) 4 किमी</li>
+					<li>(B) 4.5 किमी</li>
+					<li>(C) 5 किमी</li>
+					<li>(D) 6 किमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q10">
+				<p>10. धारा के अनुकूल एक नाव 12 किमी/घंटा और धारा के प्रतिकूल 8 किमी/घंटा की गति से चलती है। शांत जल में
+					नाव की गति और धारा की गति ज्ञात कीजिए।</p>
+				<ul class="options">
+					<li>(A) 10 किमी/घंटा, 2 किमी/घंटा</li>
+					<li>(B) 8 किमी/घंटा, 4 किमी/घंटा</li>
+					<li>(C) 9 किमी/घंटा, 3 किमी/घंटा</li>
+					<li>(D) 11 किमी/घंटा, 1 किमी/घंटा</li>
+				</ul>
+			</div>
+
+			<h3>खंड-2: क्षेत्रमिति (प्रश्न 11-20)</h3>
+
+			<div class="question" id="q11">
+				<p>11. एक आयत की लंबाई 15 मीटर और चौड़ाई 10 मीटर है। इसका क्षेत्रफल और परिमाप कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 150 वर्ग मी, 50 मी</li>
+					<li>(B) 150 वर्ग मी, 40 मी</li>
+					<li>(C) 120 वर्ग मी, 50 मी</li>
+					<li>(D) 120 वर्ग मी, 40 मी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q12">
+				<p>12. एक वर्ग का विकर्ण 14√2 सेमी है। वर्ग का क्षेत्रफल कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 144 वर्ग सेमी</li>
+					<li>(B) 169 वर्ग सेमी</li>
+					<li>(C) 196 वर्ग सेमी</li>
+					<li>(D) 225 वर्ग सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q13">
+				<p>13. एक वृत्त की त्रिज्या 7 सेमी है। उसकी परिधि कितनी होगी? (π = 22/7)</p>
+				<ul class="options">
+					<li>(A) 22 सेमी</li>
+					<li>(B) 44 सेमी</li>
+					<li>(C) 88 सेमी</li>
+					<li>(D) 154 सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q14">
+				<p>14. एक त्रिभुज का आधार 12 सेमी और ऊँचाई 8 सेमी है। उसका क्षेत्रफल कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 36 वर्ग सेमी</li>
+					<li>(B) 48 वर्ग सेमी</li>
+					<li>(C) 72 वर्ग सेमी</li>
+					<li>(D) 96 वर्ग सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q15">
+				<p>15. एक घन की भुजा 5 सेमी है। इसका कुल पृष्ठीय क्षेत्रफल और आयतन कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 125 वर्ग सेमी, 150 घन सेमी</li>
+					<li>(B) 150 वर्ग सेमी, 125 घन सेमी</li>
+					<li>(C) 100 वर्ग सेमी, 125 घन सेमी</li>
+					<li>(D) 150 वर्ग सेमी, 100 घन सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q16">
+				<p>16. एक बेलन (cylinder) की त्रिज्या 7 सेमी और ऊँचाई 10 सेमी है। उसका आयतन कितना होगा? (π = 22/7)</p>
+				<ul class="options">
+					<li>(A) 1540 घन सेमी</li>
+					<li>(B) 1320 घन सेमी</li>
+					<li>(C) 1440 घन सेमी</li>
+					<li>(D) 1650 घन सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q17">
+				<p>17. एक समचतुर्भुज के विकर्ण 16 सेमी और 12 सेमी हैं। इसका क्षेत्रफल कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 72 वर्ग सेमी</li>
+					<li>(B) 84 वर्ग सेमी</li>
+					<li>(C) 96 वर्ग सेमी</li>
+					<li>(D) 108 वर्ग सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q18">
+				<p>18. एक गोले (sphere) की त्रिज्या 3 सेमी है। उसका आयतन कितना होगा? (π = 22/7)</p>
+				<ul class="options">
+					<li>(A) 88.57 घन सेमी</li>
+					<li>(B) 100.57 घन सेमी</li>
+					<li>(C) 113.14 घन सेमी</li>
+					<li>(D) 150 घन सेमी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q19">
+				<p>19. एक आयताकार कमरे की लंबाई 12 मीटर, चौड़ाई 8 मीटर और ऊँचाई 4 मीटर है। चारों दीवारों का क्षेत्रफल
+					कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 120 वर्ग मी</li>
+					<li>(B) 160 वर्ग मी</li>
+					<li>(C) 200 वर्ग मी</li>
+					<li>(D) 240 वर्ग मी</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q20">
+				<p>20. एक समबाहु त्रिभुज की भुजा 6 सेमी है। इसका क्षेत्रफल कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 6√3 वर्ग सेमी</li>
+					<li>(B) 9√3 वर्ग सेमी</li>
+					<li>(C) 12√3 वर्ग सेमी</li>
+					<li>(D) 15√3 वर्ग सेमी</li>
+				</ul>
+			</div>
+
+			<h3>खंड-3: बीजगणित (प्रश्न 21-30)</h3>
+
+			<div class="question" id="q21">
+				<p>21. यदि x + 1/x = 5, तो x² + 1/x² = ?</p>
+				<ul class="options">
+					<li>(A) 21</li>
+					<li>(B) 23</li>
+					<li>(C) 25</li>
+					<li>(D) 27</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q22">
+				<p>22. (a + b)² − (a − b)² = ?</p>
+				<ul class="options">
+					<li>(A) 2ab</li>
+					<li>(B) 4ab</li>
+					<li>(C) a² + b²</li>
+					<li>(D) 2(a² + b²)</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q23">
+				<p>23. यदि 3x − 7 = 11, तो x = ?</p>
+				<ul class="options">
+					<li>(A) 4</li>
+					<li>(B) 5</li>
+					<li>(C) 6</li>
+					<li>(D) 7</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q24">
+				<p>24. x² − 9 = 0 के मूल कौन से हैं?</p>
+				<ul class="options">
+					<li>(A) 3, −3</li>
+					<li>(B) 9, −9</li>
+					<li>(C) 3, 3</li>
+					<li>(D) 0, 9</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q25">
+				<p>25. यदि a + b = 10 और ab = 21, तो a² + b² = ?</p>
+				<ul class="options">
+					<li>(A) 52</li>
+					<li>(B) 56</li>
+					<li>(C) 58</li>
+					<li>(D) 62</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q26">
+				<p>26. (x + 3)(x − 3) को सरल कीजिए:</p>
+				<ul class="options">
+					<li>(A) x² − 6</li>
+					<li>(B) x² − 9</li>
+					<li>(C) x² + 9</li>
+					<li>(D) x² − 6x + 9</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q27">
+				<p>27. यदि 2x + 3y = 12 और x − y = 1, तो x और y का मान क्या होगा?</p>
+				<ul class="options">
+					<li>(A) x = 3, y = 2</li>
+					<li>(B) x = 4, y = 3</li>
+					<li>(C) x = 2, y = 1</li>
+					<li>(D) x = 5, y = 4</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q28">
+				<p>28. √(50) + √(18) − √(8) = ?</p>
+				<ul class="options">
+					<li>(A) 5√2</li>
+					<li>(B) 6√2</li>
+					<li>(C) 7√2</li>
+					<li>(D) 8√2</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q29">
+				<p>29. यदि x³ + y³ = 35 और x + y = 5, तो xy = ?</p>
+				<ul class="options">
+					<li>(A) 4</li>
+					<li>(B) 5</li>
+					<li>(C) 6</li>
+					<li>(D) 8</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q30">
+				<p>30. 2x² + 5x − 3 = 0 के मूलों का योग और गुणनफल क्या होगा?</p>
+				<ul class="options">
+					<li>(A) योग = −5/2, गुणनफल = −3/2</li>
+					<li>(B) योग = 5/2, गुणनफल = 3/2</li>
+					<li>(C) योग = −5/2, गुणनफल = 3/2</li>
+					<li>(D) योग = 5/2, गुणनफल = −3/2</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Solutions Section -->
+		<div class="solutions">
+			<h2>उत्तर एवं हल</h2>
+
+			<div class="solution" id="s1">
+				<p><strong>1. उत्तर: (D) 180 किमी</strong></p>
+				<p>दूरी = गति × समय = 60 × 3 = <strong>180 किमी</strong></p>
+			</div>
+
+			<div class="solution" id="s2">
+				<p><strong>2. उत्तर: (B) 20 मी/से</strong></p>
+				<p>किमी/घंटा को मी/से में बदलने के लिए: × 5/18</p>
+				<p>72 × 5/18 = <strong>20 मी/से</strong></p>
+			</div>
+
+			<div class="solution" id="s3">
+				<p><strong>3. उत्तर: (B) 48 किमी/घंटा</strong></p>
+				<p>औसत गति = 2 × S₁ × S₂ / (S₁ + S₂)</p>
+				<p>= 2 × 40 × 60 / (40 + 60) = 4800/100 = <strong>48 किमी/घंटा</strong></p>
+			</div>
+
+			<div class="solution" id="s4">
+				<p><strong>4. उत्तर: (B) 10 सेकंड</strong></p>
+				<p>गति = 54 × 5/18 = 15 मी/से</p>
+				<p>खंभा पार करने में: समय = ट्रेन की लंबाई / गति = 150/15 = <strong>10 सेकंड</strong></p>
+			</div>
+
+			<div class="solution" id="s5">
+				<p><strong>5. उत्तर: (B) 2 घंटे</strong></p>
+				<p>सापेक्ष गति (विपरीत दिशा) = 50 + 40 = 90 किमी/घंटा</p>
+				<p>समय = 180/90 = <strong>2 घंटे</strong></p>
+			</div>
+
+			<div class="solution" id="s6">
+				<p><strong>6. उत्तर: (C) 6 घंटे</strong></p>
+				<p>धारा के प्रतिकूल गति = 10 − 2 = 8 किमी/घंटा</p>
+				<p>समय = 48/8 = <strong>6 घंटे</strong></p>
+			</div>
+
+			<div class="solution" id="s7">
+				<p><strong>7. उत्तर: (B) 72 किमी/घंटा</strong></p>
+				<p>कुल दूरी = 200 + 300 = 500 मीटर</p>
+				<p>गति = 500/25 = 20 मी/से = 20 × 18/5 = <strong>72 किमी/घंटा</strong></p>
+			</div>
+
+			<div class="solution" id="s8">
+				<p><strong>8. उत्तर: (B) 3 घंटे</strong></p>
+				<p>सापेक्ष गति = 60 + 40 = 100 किमी/घंटा</p>
+				<p>समय = 300/100 = <strong>3 घंटे</strong></p>
+			</div>
+
+			<div class="solution" id="s9">
+				<p><strong>9. उत्तर: (B) 4.5 किमी</strong></p>
+				<p>माना दूरी = d किमी, कुल अंतर = 5 + 4 = 9 मिनट = 9/60 = 3/20 घंटे</p>
+				<p>d/5 − d/6 = 3/20</p>
+				<p>(6d − 5d)/30 = 3/20</p>
+				<p>d/30 = 3/20 → d = 90/20 = <strong>4.5 किमी</strong></p>
+			</div>
+
+			<div class="solution" id="s10">
+				<p><strong>10. उत्तर: (A) 10 किमी/घंटा, 2 किमी/घंटा</strong></p>
+				<p>नाव की गति = (12 + 8)/2 = 20/2 = <strong>10 किमी/घंटा</strong></p>
+				<p>धारा की गति = (12 − 8)/2 = 4/2 = <strong>2 किमी/घंटा</strong></p>
+			</div>
+
+			<div class="solution" id="s11">
+				<p><strong>11. उत्तर: (A) 150 वर्ग मी, 50 मी</strong></p>
+				<p>क्षेत्रफल = 15 × 10 = 150 वर्ग मी</p>
+				<p>परिमाप = 2(15 + 10) = 2 × 25 = <strong>50 मी</strong></p>
+			</div>
+
+			<div class="solution" id="s12">
+				<p><strong>12. उत्तर: (C) 196 वर्ग सेमी</strong></p>
+				<p>विकर्ण = a√2, जहाँ a = भुजा</p>
+				<p>14√2 = a√2 → a = 14 सेमी</p>
+				<p>क्षेत्रफल = a² = 14² = <strong>196 वर्ग सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s13">
+				<p><strong>13. उत्तर: (B) 44 सेमी</strong></p>
+				<p>परिधि = 2πr = 2 × 22/7 × 7 = <strong>44 सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s14">
+				<p><strong>14. उत्तर: (B) 48 वर्ग सेमी</strong></p>
+				<p>क्षेत्रफल = 1/2 × आधार × ऊँचाई = 1/2 × 12 × 8 = <strong>48 वर्ग सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s15">
+				<p><strong>15. उत्तर: (B) 150 वर्ग सेमी, 125 घन सेमी</strong></p>
+				<p>कुल पृष्ठीय क्षेत्रफल = 6a² = 6 × 25 = <strong>150 वर्ग सेमी</strong></p>
+				<p>आयतन = a³ = 5³ = <strong>125 घन सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s16">
+				<p><strong>16. उत्तर: (A) 1540 घन सेमी</strong></p>
+				<p>आयतन = πr²h = 22/7 × 7² × 10 = 22/7 × 49 × 10</p>
+				<p>= 22 × 7 × 10 = <strong>1540 घन सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s17">
+				<p><strong>17. उत्तर: (C) 96 वर्ग सेमी</strong></p>
+				<p>क्षेत्रफल = 1/2 × d₁ × d₂ = 1/2 × 16 × 12 = <strong>96 वर्ग सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s18">
+				<p><strong>18. उत्तर: (C) 113.14 घन सेमी</strong></p>
+				<p>आयतन = 4/3 × π × r³ = 4/3 × 22/7 × 3³</p>
+				<p>= 4/3 × 22/7 × 27 = 4 × 22 × 27 / 21</p>
+				<p>= 2376/21 = <strong>113.14 घन सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s19">
+				<p><strong>19. उत्तर: (B) 160 वर्ग मी</strong></p>
+				<p>चारों दीवारों का क्षेत्रफल = 2h(l + b)</p>
+				<p>= 2 × 4 × (12 + 8) = 8 × 20 = <strong>160 वर्ग मी</strong></p>
+			</div>
+
+			<div class="solution" id="s20">
+				<p><strong>20. उत्तर: (B) 9√3 वर्ग सेमी</strong></p>
+				<p>समबाहु त्रिभुज का क्षेत्रफल = (√3/4) × a²</p>
+				<p>= (√3/4) × 36 = <strong>9√3 वर्ग सेमी</strong></p>
+			</div>
+
+			<div class="solution" id="s21">
+				<p><strong>21. उत्तर: (B) 23</strong></p>
+				<p>x + 1/x = 5</p>
+				<p>दोनों ओर वर्ग करें: (x + 1/x)² = 25</p>
+				<p>x² + 2 + 1/x² = 25</p>
+				<p>x² + 1/x² = 25 − 2 = <strong>23</strong></p>
+			</div>
+
+			<div class="solution" id="s22">
+				<p><strong>22. उत्तर: (B) 4ab</strong></p>
+				<p>(a+b)² = a² + 2ab + b²</p>
+				<p>(a−b)² = a² − 2ab + b²</p>
+				<p>(a+b)² − (a−b)² = 4ab = <strong>4ab</strong></p>
+			</div>
+
+			<div class="solution" id="s23">
+				<p><strong>23. उत्तर: (C) 6</strong></p>
+				<p>3x − 7 = 11 → 3x = 18 → x = <strong>6</strong></p>
+			</div>
+
+			<div class="solution" id="s24">
+				<p><strong>24. उत्तर: (A) 3, −3</strong></p>
+				<p>x² − 9 = 0 → x² = 9 → x = ±3</p>
+				<p>मूल = <strong>3, −3</strong></p>
+			</div>
+
+			<div class="solution" id="s25">
+				<p><strong>25. उत्तर: (C) 58</strong></p>
+				<p>(a + b)² = a² + 2ab + b²</p>
+				<p>10² = a² + b² + 2(21)</p>
+				<p>100 = a² + b² + 42</p>
+				<p>a² + b² = 100 − 42 = <strong>58</strong></p>
+			</div>
+
+			<div class="solution" id="s26">
+				<p><strong>26. उत्तर: (B) x² − 9</strong></p>
+				<p>(x + 3)(x − 3) = x² − 3² = <strong>x² − 9</strong></p>
+			</div>
+
+			<div class="solution" id="s27">
+				<p><strong>27. उत्तर: (A) x = 3, y = 2</strong></p>
+				<p>x − y = 1 → x = y + 1</p>
+				<p>2(y+1) + 3y = 12 → 2y + 2 + 3y = 12 → 5y = 10 → y = 2</p>
+				<p>x = 2 + 1 = 3</p>
+				<p>x = <strong>3</strong>, y = <strong>2</strong></p>
+			</div>
+
+			<div class="solution" id="s28">
+				<p><strong>28. उत्तर: (B) 6√2</strong></p>
+				<p>√50 = 5√2, √18 = 3√2, √8 = 2√2</p>
+				<p>= 5√2 + 3√2 − 2√2 = <strong>6√2</strong></p>
+			</div>
+
+			<div class="solution" id="s29">
+				<p><strong>29. उत्तर: (C) 6</strong></p>
+				<p>x³ + y³ = (x+y)(x² − xy + y²) = (x+y)[(x+y)² − 3xy]</p>
+				<p>35 = 5 × [25 − 3xy]</p>
+				<p>7 = 25 − 3xy → 3xy = 18 → xy = <strong>6</strong></p>
+			</div>
+
+			<div class="solution" id="s30">
+				<p><strong>30. उत्तर: (A) योग = −5/2, गुणनफल = −3/2</strong></p>
+				<p>ax² + bx + c = 0 के लिए:</p>
+				<p>मूलों का योग = −b/a = −5/2</p>
+				<p>मूलों का गुणनफल = c/a = −3/2</p>
+				<p>योग = <strong>−5/2</strong>, गुणनफल = <strong>−3/2</strong></p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

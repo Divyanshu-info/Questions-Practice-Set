@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>गणित प्रैक्टिस सेट भाग-2: प्रतिशत, लाभ-हानि, ब्याज - UPSI</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			line-height: 1.6;
+			margin: 20px;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: auto;
+			background: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1,
+		h2 {
+			text-align: center;
+			color: #2c3e50;
+			border-bottom: 2px solid #3498db;
+			padding-bottom: 10px;
+		}
+
+		h3 {
+			color: #2c3e50;
+			margin-top: 30px;
+		}
+
+		.question-paper,
+		.solutions {
+			margin-top: 20px;
+		}
+
+		.question {
+			margin-bottom: 25px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.question p {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.options {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		.options li {
+			margin-bottom: 5px;
+		}
+
+		.solution {
+			margin-bottom: 20px;
+			padding: 15px;
+			background-color: #ecf0f1;
+			border-left: 4px solid #3498db;
+		}
+
+		.solution p {
+			margin: 5px 0;
+		}
+
+		@media print {
+			body {
+				background-color: #fff;
+				margin: 0;
+			}
+
+			.container {
+				box-shadow: none;
+				border-radius: 0;
+				width: 100%;
+				max-width: 100%;
+				padding: 10px;
+			}
+
+			h1,
+			h2 {
+				page-break-after: avoid;
+			}
+
+			.solutions {
+				page-break-before: always;
+			}
+
+			.question,
+			.solution {
+				page-break-inside: avoid;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>गणित प्रैक्टिस सेट भाग-2 (UPSI परीक्षा)</h1>
+		<p style="text-align:center; color:#666;">विषय: प्रतिशत, लाभ-हानि, साधारण एवं चक्रवृद्धि ब्याज | कुल प्रश्न: 30
+		</p>
+
+		<div class="question-paper">
+			<h2>प्रश्न पत्र</h2>
+
+			<h3>खंड-1: प्रतिशत (प्रश्न 1-10)</h3>
+
+			<div class="question" id="q1">
+				<p>1. 450 का 24% कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 98</li>
+					<li>(B) 108</li>
+					<li>(C) 112</li>
+					<li>(D) 118</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q2">
+				<p>2. यदि किसी संख्या का 15% = 45 हो, तो उस संख्या का 30% कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 80</li>
+					<li>(B) 90</li>
+					<li>(C) 100</li>
+					<li>(D) 120</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q3">
+				<p>3. एक परीक्षा में 35% विद्यार्थी अनुत्तीर्ण हुए। यदि उत्तीर्ण विद्यार्थियों की संख्या 455 है, तो कुल
+					विद्यार्थी कितने थे?</p>
+				<ul class="options">
+					<li>(A) 650</li>
+					<li>(B) 700</li>
+					<li>(C) 750</li>
+					<li>(D) 800</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q4">
+				<p>4. किसी व्यक्ति की आय में 20% वृद्धि होने के बाद उसकी आय ₹36,000 हो जाती है। उसकी पहले की आय कितनी
+					थी?</p>
+				<ul class="options">
+					<li>(A) ₹28,000</li>
+					<li>(B) ₹28,800</li>
+					<li>(C) ₹30,000</li>
+					<li>(D) ₹32,000</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q5">
+				<p>5. एक संख्या को पहले 25% बढ़ाया जाता है, फिर 20% कम किया जाता है। कुल परिवर्तन कितने प्रतिशत है?</p>
+				<ul class="options">
+					<li>(A) 5% वृद्धि</li>
+					<li>(B) 5% कमी</li>
+					<li>(C) कोई परिवर्तन नहीं</li>
+					<li>(D) 10% वृद्धि</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q6">
+				<p>6. यदि चीनी का मूल्य 30% बढ़ जाए, तो एक व्यक्ति को अपने खर्च में कितने प्रतिशत कमी करनी चाहिए ताकि
+					खर्च पहले जितना ही रहे?</p>
+				<ul class="options">
+					<li>(A) 23 1/13 %</li>
+					<li>(B) 25%</li>
+					<li>(C) 30%</li>
+					<li>(D) 20%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q7">
+				<p>7. एक शहर की जनसंख्या 50,000 है। यदि यह हर वर्ष 10% बढ़ती है, तो 2 वर्ष बाद जनसंख्या क्या होगी?</p>
+				<ul class="options">
+					<li>(A) 55,000</li>
+					<li>(B) 60,000</li>
+					<li>(C) 60,500</li>
+					<li>(D) 61,000</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q8">
+				<p>8. A की आय B की आय से 25% अधिक है। B की आय A की आय से कितने प्रतिशत कम है?</p>
+				<ul class="options">
+					<li>(A) 25%</li>
+					<li>(B) 20%</li>
+					<li>(C) 15%</li>
+					<li>(D) 30%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q9">
+				<p>9. किसी कक्षा में 60% विद्यार्थी लड़के हैं। लड़कियों की संख्या 24 है। कक्षा में कुल कितने विद्यार्थी
+					हैं?</p>
+				<ul class="options">
+					<li>(A) 50</li>
+					<li>(B) 55</li>
+					<li>(C) 60</li>
+					<li>(D) 65</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q10">
+				<p>10. 3/5 को प्रतिशत में बदलने पर कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 50%</li>
+					<li>(B) 55%</li>
+					<li>(C) 60%</li>
+					<li>(D) 65%</li>
+				</ul>
+			</div>
+
+			<h3>खंड-2: लाभ और हानि (प्रश्न 11-20)</h3>
+
+			<div class="question" id="q11">
+				<p>11. एक वस्तु ₹450 में खरीदकर ₹540 में बेची गई। लाभ प्रतिशत कितना है?</p>
+				<ul class="options">
+					<li>(A) 15%</li>
+					<li>(B) 18%</li>
+					<li>(C) 20%</li>
+					<li>(D) 25%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q12">
+				<p>12. एक दुकानदार ने एक वस्तु ₹800 में खरीदी और 15% हानि पर बेची। विक्रय मूल्य कितना है?</p>
+				<ul class="options">
+					<li>(A) ₹660</li>
+					<li>(B) ₹680</li>
+					<li>(C) ₹700</li>
+					<li>(D) ₹720</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q13">
+				<p>13. यदि किसी वस्तु का विक्रय मूल्य ₹1,080 है और लाभ 20% है, तो क्रय मूल्य कितना है?</p>
+				<ul class="options">
+					<li>(A) ₹850</li>
+					<li>(B) ₹900</li>
+					<li>(C) ₹950</li>
+					<li>(D) ₹1,000</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q14">
+				<p>14. एक व्यापारी अपनी वस्तुओं पर क्रय मूल्य से 40% अधिक अंकित करता है, फिर 10% छूट देता है। उसका लाभ
+					प्रतिशत कितना होगा?</p>
+				<ul class="options">
+					<li>(A) 20%</li>
+					<li>(B) 24%</li>
+					<li>(C) 26%</li>
+					<li>(D) 30%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q15">
+				<p>15. एक व्यक्ति ने 2 वस्तुएँ ₹600-₹600 में बेचीं। एक पर 20% लाभ और दूसरी पर 20% हानि हुई। कुल लाभ या
+					हानि कितनी हुई?</p>
+				<ul class="options">
+					<li>(A) कोई लाभ-हानि नहीं</li>
+					<li>(B) ₹50 हानि</li>
+					<li>(C) ₹40 हानि</li>
+					<li>(D) ₹60 हानि</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q16">
+				<p>16. 12 वस्तुओं का क्रय मूल्य 15 वस्तुओं के विक्रय मूल्य के बराबर है। लाभ या हानि प्रतिशत कितना होगा?
+				</p>
+				<ul class="options">
+					<li>(A) 20% लाभ</li>
+					<li>(B) 20% हानि</li>
+					<li>(C) 25% हानि</li>
+					<li>(D) 25% लाभ</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q17">
+				<p>17. एक दुकानदार ₹1,500 में एक साइकिल खरीदता है। वह इसे ₹1,800 के अंकित मूल्य पर बेचते हुए 10% छूट
+					देता है। उसका लाभ/हानि प्रतिशत क्या होगा?</p>
+				<ul class="options">
+					<li>(A) 6% लाभ</li>
+					<li>(B) 8% लाभ</li>
+					<li>(C) 8% हानि</li>
+					<li>(D) 10% लाभ</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q18">
+				<p>18. एक वस्तु को ₹920 में बेचने पर 8% हानि होती है। 15% लाभ कमाने के लिए उसे कितने में बेचना चाहिए?
+				</p>
+				<ul class="options">
+					<li>(A) ₹1,050</li>
+					<li>(B) ₹1,100</li>
+					<li>(C) ₹1,150</li>
+					<li>(D) ₹1,200</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q19">
+				<p>19. किसी वस्तु पर 25% का लाभ अंकित किया गया। यदि ₹150 की छूट दी जाए, तो भी 5% का लाभ होता है। वस्तु
+					का क्रय मूल्य क्या है?</p>
+				<ul class="options">
+					<li>(A) ₹600</li>
+					<li>(B) ₹700</li>
+					<li>(C) ₹750</li>
+					<li>(D) ₹800</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q20">
+				<p>20. एक फल विक्रेता ₹15 प्रति किग्रा की दर से 40 किग्रा सेब खरीदता है। 5 किग्रा सेब सड़ जाते हैं। शेष
+					सेबों को किस दर पर बेचे कि उसे 20% लाभ हो?</p>
+				<ul class="options">
+					<li>(A) ₹20.57 प्रति किग्रा</li>
+					<li>(B) ₹22 प्रति किग्रा</li>
+					<li>(C) ₹24 प्रति किग्रा</li>
+					<li>(D) ₹25.14 प्रति किग्रा</li>
+				</ul>
+			</div>
+
+			<h3>खंड-3: साधारण एवं चक्रवृद्धि ब्याज (प्रश्न 21-30)</h3>
+
+			<div class="question" id="q21">
+				<p>21. ₹6,000 की राशि पर 8% वार्षिक साधारण ब्याज की दर से 3 वर्ष का ब्याज कितना होगा?</p>
+				<ul class="options">
+					<li>(A) ₹1,200</li>
+					<li>(B) ₹1,440</li>
+					<li>(C) ₹1,600</li>
+					<li>(D) ₹1,800</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q22">
+				<p>22. कितने वर्षों में ₹4,000 साधारण ब्याज की 5% दर से ₹5,000 हो जाएगा?</p>
+				<ul class="options">
+					<li>(A) 4 वर्ष</li>
+					<li>(B) 5 वर्ष</li>
+					<li>(C) 6 वर्ष</li>
+					<li>(D) 8 वर्ष</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q23">
+				<p>23. यदि कोई राशि साधारण ब्याज पर 12 वर्ष में दोगुनी हो जाती है, तो ब्याज की दर कितनी है?</p>
+				<ul class="options">
+					<li>(A) 8%</li>
+					<li>(B) 8 1/3 %</li>
+					<li>(C) 10%</li>
+					<li>(D) 12%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q24">
+				<p>24. ₹15,000 की राशि पर 10% वार्षिक चक्रवृद्धि ब्याज की दर से 2 वर्ष में कितना मिश्रधन होगा?</p>
+				<ul class="options">
+					<li>(A) ₹18,000</li>
+					<li>(B) ₹18,150</li>
+					<li>(C) ₹18,500</li>
+					<li>(D) ₹19,000</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q25">
+				<p>25. ₹8,000 पर 2 वर्ष के साधारण ब्याज और चक्रवृद्धि ब्याज (वार्षिक) का अंतर ₹80 है। ब्याज दर क्या है?
+				</p>
+				<ul class="options">
+					<li>(A) 8%</li>
+					<li>(B) 10%</li>
+					<li>(C) 12%</li>
+					<li>(D) 15%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q26">
+				<p>26. एक व्यक्ति ने ₹12,000 की राशि 2 भागों में उधार दी। एक भाग 10% और दूसरा 15% साधारण ब्याज पर। यदि
+					कुल वार्षिक ब्याज ₹1,500 है, तो 10% वाला भाग कितना है?</p>
+				<ul class="options">
+					<li>(A) ₹4,000</li>
+					<li>(B) ₹5,000</li>
+					<li>(C) ₹6,000</li>
+					<li>(D) ₹7,000</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q27">
+				<p>27. ₹5,000 पर 12% वार्षिक चक्रवृद्धि ब्याज (अर्धवार्षिक संयोजन) से 1 वर्ष का चक्रवृद्धि ब्याज कितना
+					होगा?</p>
+				<ul class="options">
+					<li>(A) ₹600</li>
+					<li>(B) ₹609</li>
+					<li>(C) ₹618</li>
+					<li>(D) ₹612</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q28">
+				<p>28. एक धनराशि साधारण ब्याज पर 4 वर्ष में ₹5,600 और 6 वर्ष में ₹6,400 हो जाती है। मूलधन और ब्याज दर
+					ज्ञात कीजिए।</p>
+				<ul class="options">
+					<li>(A) ₹4,000, 10%</li>
+					<li>(B) ₹4,200, 8%</li>
+					<li>(C) ₹4,000, 8%</li>
+					<li>(D) ₹3,800, 10%</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q29">
+				<p>29. ₹10,000 का 2 वर्ष में 20% वार्षिक दर से साधारण और चक्रवृद्धि ब्याज का अंतर कितना होगा?</p>
+				<ul class="options">
+					<li>(A) ₹200</li>
+					<li>(B) ₹300</li>
+					<li>(C) ₹400</li>
+					<li>(D) ₹500</li>
+				</ul>
+			</div>
+
+			<div class="question" id="q30">
+				<p>30. किसी मूलधन पर 10% वार्षिक चक्रवृद्धि ब्याज से 3 वर्ष बाद मिश्रधन ₹13,310 हो जाता है। मूलधन कितना
+					है?</p>
+				<ul class="options">
+					<li>(A) ₹9,000</li>
+					<li>(B) ₹9,500</li>
+					<li>(C) ₹10,000</li>
+					<li>(D) ₹10,500</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Solutions Section -->
+		<div class="solutions">
+			<h2>उत्तर एवं हल</h2>
+
+			<div class="solution" id="s1">
+				<p><strong>1. उत्तर: (B) 108</strong></p>
+				<p>450 का 24% = 450 × 24/100 = 450 × 0.24 = <strong>108</strong></p>
+			</div>
+
+			<div class="solution" id="s2">
+				<p><strong>2. उत्तर: (B) 90</strong></p>
+				<p>15% of x = 45 → x = 45 × 100/15 = 300</p>
+				<p>30% of 300 = 300 × 30/100 = <strong>90</strong></p>
+			</div>
+
+			<div class="solution" id="s3">
+				<p><strong>3. उत्तर: (B) 700</strong></p>
+				<p>उत्तीर्ण = 100% − 35% = 65%</p>
+				<p>65% of x = 455 → x = 455 × 100/65 = <strong>700</strong></p>
+			</div>
+
+			<div class="solution" id="s4">
+				<p><strong>4. उत्तर: (C) ₹30,000</strong></p>
+				<p>120% of x = 36000</p>
+				<p>x = 36000 × 100/120 = <strong>₹30,000</strong></p>
+			</div>
+
+			<div class="solution" id="s5">
+				<p><strong>5. उत्तर: (C) कोई परिवर्तन नहीं</strong></p>
+				<p>माना संख्या = 100</p>
+				<p>25% वृद्धि: 100 × 1.25 = 125</p>
+				<p>20% कमी: 125 × 0.80 = 100</p>
+				<p>कुल परिवर्तन = <strong>0% (कोई परिवर्तन नहीं)</strong></p>
+			</div>
+
+			<div class="solution" id="s6">
+				<p><strong>6. उत्तर: (A) 23 1/13 %</strong></p>
+				<p>कमी % = (वृद्धि% / (100 + वृद्धि%)) × 100</p>
+				<p>= (30/130) × 100 = 300/13 = <strong>23 1/13 %</strong></p>
+			</div>
+
+			<div class="solution" id="s7">
+				<p><strong>7. उत्तर: (C) 60,500</strong></p>
+				<p>2 वर्ष बाद = 50000 × (1 + 10/100)²</p>
+				<p>= 50000 × (1.1)² = 50000 × 1.21 = <strong>60,500</strong></p>
+			</div>
+
+			<div class="solution" id="s8">
+				<p><strong>8. उत्तर: (B) 20%</strong></p>
+				<p>माना B की आय = 100, तो A की आय = 125</p>
+				<p>B, A से कम = (125 − 100)/125 × 100 = 25/125 × 100 = <strong>20%</strong></p>
+			</div>
+
+			<div class="solution" id="s9">
+				<p><strong>9. उत्तर: (C) 60</strong></p>
+				<p>लड़कियाँ = 100% − 60% = 40%</p>
+				<p>40% of x = 24 → x = 24 × 100/40 = <strong>60</strong></p>
+			</div>
+
+			<div class="solution" id="s10">
+				<p><strong>10. उत्तर: (C) 60%</strong></p>
+				<p>3/5 × 100 = <strong>60%</strong></p>
+			</div>
+
+			<div class="solution" id="s11">
+				<p><strong>11. उत्तर: (C) 20%</strong></p>
+				<p>लाभ = 540 − 450 = ₹90</p>
+				<p>लाभ% = (90/450) × 100 = <strong>20%</strong></p>
+			</div>
+
+			<div class="solution" id="s12">
+				<p><strong>12. उत्तर: (B) ₹680</strong></p>
+				<p>विक्रय मूल्य = 800 × (100−15)/100 = 800 × 85/100 = <strong>₹680</strong></p>
+			</div>
+
+			<div class="solution" id="s13">
+				<p><strong>13. उत्तर: (B) ₹900</strong></p>
+				<p>क्रय मूल्य = विक्रय मूल्य × 100/(100 + लाभ%)</p>
+				<p>= 1080 × 100/120 = <strong>₹900</strong></p>
+			</div>
+
+			<div class="solution" id="s14">
+				<p><strong>14. उत्तर: (C) 26%</strong></p>
+				<p>माना क्रय मूल्य = ₹100</p>
+				<p>अंकित मूल्य = 100 + 40% = ₹140</p>
+				<p>छूट 10% = 140 × 10/100 = ₹14</p>
+				<p>विक्रय मूल्य = 140 − 14 = ₹126</p>
+				<p>लाभ% = (126 − 100)/100 × 100 = <strong>26%</strong></p>
+			</div>
+
+			<div class="solution" id="s15">
+				<p><strong>15. उत्तर: (B) ₹50 हानि</strong></p>
+				<p>जब SP समान हो और लाभ-हानि% भी समान हो:</p>
+				<p>पहली वस्तु का CP = 600 × 100/120 = ₹500</p>
+				<p>दूसरी वस्तु का CP = 600 × 100/80 = ₹750</p>
+				<p>कुल CP = 500 + 750 = ₹1,250</p>
+				<p>कुल SP = 600 + 600 = ₹1,200</p>
+				<p>हानि = 1250 − 1200 = <strong>₹50 हानि</strong></p>
+			</div>
+
+			<div class="solution" id="s16">
+				<p><strong>16. उत्तर: (B) 20% हानि</strong></p>
+				<p>माना 1 वस्तु का CP = ₹1, SP = x</p>
+				<p>12 × CP = 15 × SP → 12 × 1 = 15 × x → x = 12/15 = 4/5</p>
+				<p>हानि = CP − SP = 1 − 4/5 = 1/5</p>
+				<p>हानि% = (1/5)/1 × 100 = <strong>20%</strong></p>
+			</div>
+
+			<div class="solution" id="s17">
+				<p><strong>17. उत्तर: (C) 8% हानि</strong></p>
+				<p>CP = ₹1,500, अंकित मूल्य = ₹1,800</p>
+				<p>छूट = 10% of 1800 = ₹180</p>
+				<p>SP = 1800 − 180 = ₹1,620</p>
+				<p>लाभ = 1620 − 1500 = ₹120</p>
+				<p>लाभ% = (120/1500) × 100 = <strong>8% लाभ</strong></p>
+				<p><strong>सही उत्तर: (B) 8% लाभ</strong></p>
+			</div>
+
+			<div class="solution" id="s18">
+				<p><strong>18. उत्तर: (C) ₹1,150</strong></p>
+				<p>SP = ₹920, हानि = 8%</p>
+				<p>CP = 920 × 100/92 = ₹1,000</p>
+				<p>15% लाभ पर SP = 1000 × 115/100 = <strong>₹1,150</strong></p>
+			</div>
+
+			<div class="solution" id="s19">
+				<p><strong>19. उत्तर: (C) ₹750</strong></p>
+				<p>माना CP = x</p>
+				<p>अंकित मूल्य = 1.25x</p>
+				<p>छूट के बाद SP = 1.25x − 150</p>
+				<p>5% लाभ पर SP = 1.05x</p>
+				<p>1.25x − 150 = 1.05x</p>
+				<p>0.20x = 150 → x = <strong>₹750</strong></p>
+			</div>
+
+			<div class="solution" id="s20">
+				<p><strong>20. उत्तर: (A) ₹20.57 प्रति किग्रा (लगभग)</strong></p>
+				<p>कुल CP = 40 × 15 = ₹600</p>
+				<p>20% लाभ पर कुल SP = 600 × 120/100 = ₹720</p>
+				<p>बेचने योग्य सेब = 40 − 5 = 35 किग्रा</p>
+				<p>दर = 720/35 = <strong>₹20.57 प्रति किग्रा (लगभग)</strong></p>
+			</div>
+
+			<div class="solution" id="s21">
+				<p><strong>21. उत्तर: (B) ₹1,440</strong></p>
+				<p>SI = P × R × T / 100</p>
+				<p>= 6000 × 8 × 3 / 100 = <strong>₹1,440</strong></p>
+			</div>
+
+			<div class="solution" id="s22">
+				<p><strong>22. उत्तर: (B) 5 वर्ष</strong></p>
+				<p>SI = 5000 − 4000 = ₹1,000</p>
+				<p>T = SI × 100 / (P × R) = 1000 × 100 / (4000 × 5) = <strong>5 वर्ष</strong></p>
+			</div>
+
+			<div class="solution" id="s23">
+				<p><strong>23. उत्तर: (B) 8 1/3 %</strong></p>
+				<p>दोगुना → SI = P</p>
+				<p>P = P × R × 12 / 100</p>
+				<p>R = 100/12 = <strong>8 1/3 %</strong></p>
+			</div>
+
+			<div class="solution" id="s24">
+				<p><strong>24. उत्तर: (B) ₹18,150</strong></p>
+				<p>A = P(1 + R/100)^n</p>
+				<p>= 15000 × (1 + 10/100)² = 15000 × (1.1)²</p>
+				<p>= 15000 × 1.21 = <strong>₹18,150</strong></p>
+			</div>
+
+			<div class="solution" id="s25">
+				<p><strong>25. उत्तर: (B) 10%</strong></p>
+				<p>2 वर्ष के लिए: CI − SI = P × (R/100)²</p>
+				<p>80 = 8000 × (R/100)²</p>
+				<p>(R/100)² = 80/8000 = 1/100</p>
+				<p>R/100 = 1/10 → R = <strong>10%</strong></p>
+			</div>
+
+			<div class="solution" id="s26">
+				<p><strong>26. उत्तर: (C) ₹6,000</strong></p>
+				<p>माना 10% वाला भाग = x, तो 15% वाला = 12000 − x</p>
+				<p>x × 10/100 + (12000 − x) × 15/100 = 1500</p>
+				<p>10x + 180000 − 15x = 150000</p>
+				<p>−5x = −30000 → x = <strong>₹6,000</strong></p>
+			</div>
+
+			<div class="solution" id="s27">
+				<p><strong>27. उत्तर: (C) ₹618</strong></p>
+				<p>अर्धवार्षिक: दर = 12/2 = 6%, अवधि = 2 अर्धवर्ष</p>
+				<p>CI = P[(1 + R/100)^n − 1]</p>
+				<p>= 5000 × [(1.06)² − 1] = 5000 × [1.1236 − 1]</p>
+				<p>= 5000 × 0.1236 = <strong>₹618</strong></p>
+			</div>
+
+			<div class="solution" id="s28">
+				<p><strong>28. उत्तर: (A) ₹4,000, 10%</strong></p>
+				<p>2 वर्ष का SI = 6400 − 5600 = ₹800</p>
+				<p>1 वर्ष का SI = ₹400</p>
+				<p>4 वर्ष का SI = 4 × 400 = ₹1,600</p>
+				<p>P = 5600 − 1600 = ₹4,000</p>
+				<p>R = (400 × 100)/(4000 × 1) = <strong>10%</strong></p>
+			</div>
+
+			<div class="solution" id="s29">
+				<p><strong>29. उत्तर: (C) ₹400</strong></p>
+				<p>SI = 10000 × 20 × 2 / 100 = ₹4,000</p>
+				<p>CI = 10000 × [(1.2)² − 1] = 10000 × 0.44 = ₹4,400</p>
+				<p>अंतर = 4400 − 4000 = <strong>₹400</strong></p>
+			</div>
+
+			<div class="solution" id="s30">
+				<p><strong>30. उत्तर: (C) ₹10,000</strong></p>
+				<p>A = P(1 + R/100)^n</p>
+				<p>13310 = P × (1.1)³ = P × 1.331</p>
+				<p>P = 13310/1.331 = <strong>₹10,000</strong></p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
